@@ -1,0 +1,53 @@
+#labels Featured
+=== Resources ===
+
+[http://code.google.com/p/concerto-platform/wiki/changelog *Change Log of Concerto*]
+
+*Concerto v4*
+
+ * [installation4 Installing and updating Concerto v4]
+ * *General concepts*
+  * [Concerto4Panel Concerto panel]
+  * [Concerto4TestEnvironment running Concerto test]
+  * [Concerto4RemoteClient Concerto remote test run environment]
+  * [Concerto4OnlineLibrary Concerto online library]
+ * *Concerto Panel*
+  * [Concerto4PanelTestTab 'tests' tab]
+  * [Concerto4PanelQTITab 'QTI' tab]
+  * [Concerto4PanelTemplateTab 'HTML templates' tab]
+  * [Concerto4PanelTableTab 'tables' tab]
+  * [Concerto4PanelUserTab 'users' tab]
+ * *Creating Concerto test*
+  * [Concerto4Debugging writing and debugging Concerto test]
+  * [Concerto4ConcertoPackage Concerto R package]
+  * [Concerto4DynamicContent displaying dynamic content on HTML templates]
+  * [Concerto4TableOperations operations on tables]
+  * [Concerto4SessionResuming Concerto test session resuming]
+  * [Concerto4SpecialTopics Concerto special topics]  
+ * *Tutorials*
+  * [Concerto4TutorialSimpleSurvey LESSON 1: simple survey]
+  * [Concerto4TutorialSimpleSurvey2 LESSON 2: item bank and charts]
+
+*Concerto v3*
+
+ * [installation3 Installing Concerto v3]
+ * [Concerto3Tabs General manual]
+ * [Concerto3SimpleTest Create a simple test]
+ * [Concerto3AdaptiveTest Create an adaptive test]
+ * [Concerto3AdaptiveTest_catRupdate Adaptive tests using catR 3.0]
+_If you have downloaded Concerto v3 on your own server on or after 2014-04-25, it is likely that you are using the updated version of catR. If you are using our demo server, then please use the Create an Adaptive Test tutorial and not this version. We have not updated catR on our demo server._
+ * Mini tutorials
+  * [Concerto3MultiItem Multiple items per page with Likert-type scale]
+  * [Concerto3NoResponse Preventing 'no response' situations]
+  * [Concerto3Pictures Inserting pictures, audio & video clips into a test]
+  * [Concerto3Language Multilingual tests]
+  * [Concerto3Randomisation Randomising test items]
+  * [Concerto3ItemTime Timed presentation of items]
+ * [FAQ Frequently Asked Questions]
+ * [Concerto3Updates Important feature updates since Concerto v3.0]
+
+=== Demos ===
+
+ * [http://concerto.e-psychometrics.com/demo/?tid=528 A very simple adaptive test]
+  * [http://concerto.e-psychometrics.com/demo/?tid=959 Adaptive test]
+ * [http://concerto.e-psychometrics.com/demo/?tid=1116 Adaptive test with a fancy graph]

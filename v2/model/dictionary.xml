@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Concerto Testing Platform,
+  Web based adaptive testing platform utilizing R language for computing purposes.
+
+  Copyright (C) 2011  Psychometrics Centre, Cambridge University
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!-- You can put comments this way. -->
+
+<!--
+If you feel you can contribute and translate to language not yet supported by Concerto or you feel that translation needs to be corrected then please let us know and we will add you as a contributor which will allow you to edit dictionary.xml file.
+You can add new languages by inserting <some_language>string translated into some_language</some_language> tag inside <string> tags.
+-->
+<root>
+    <languages>
+        <language id="en">english</language>
+        <language id="pl">polski</language>
+        <language id="cn">中文</language>
+        <language id="bg">български</language>
+        <language id="de">deutsch</language>
+    </languages>
+    
+    <strings>
+        <string id="4">
+            <en>Select HTML Template to import</en>
+            <pl>Wybierz Szablon HTML do importu</pl>
+            <cn>选择导入HTML模板</cn>
+            <bg>Изберете HTML шаблон за импортиране</bg>
+          <de>HTML Template auswählen zum importieren</de>
+        </string>
+        <string id="6">
+            <en>Timer</en>
+            <pl>Timer</pl>
+            <cn>计时器</cn>
+            <bg>Таймер</bg>
+            <de>Timer</de>
+        </string>
+        <string id="7">
+            <en>There are no BUTTONS in this HTML Template</en>
+            <pl>Brak przycisków w tym Szablonie HTML</pl>
+            <cn>此HTML模板不存在按钮</cn>
+            <bg>Няма БУТОНИ в този HTML шаблон</bg>
+            <de>Keine BUTTONS in diesem HTML Template</de>
+        </string>
+        <string id="8">
+            <en>There are no INSERTS in this HTML Template</en>
+            <pl>Brak INSERTÓW w tym Szablonie HTML</pl>
+            <cn>此HMTL模板不存在插入</cn>
+            <bg>Няма ВМЪКВАНЕ в този HTML шаблон</bg>
+          <de>Keine INSERTS in diesem HTML Template</de>
+        </string>
+        <string id="9">
+            <en>There are no USER INPUTS in this HTML Template</en>
+            <pl>Brak PÓL WPROWADZANIA w tym Szablonie HTML</pl>
+            <cn>此HTML模板不存在用户输入</cn>
+            <bg>Няма ПОЛЕТА ЗА ВЪВЕЖДАНЕ в този HTML шаблон</bg>
+          <de>Keine BENUTZEREINGABEN in diesem HTML Template</de>
+        </string>
+        <string id="10">
+            <en>Are you sure that you want to import HTML from this HTML Template? Unsaved changes in the HTML will be lost</en>
+            <pl>Czy jesteś pewien, że chcesz zaimportować HTML z tego Szablonu? Wszystkie niezapisane zmiany w obecnym HTML zostaną utracone</pl>
+            <cn>确定导入此HTML模板？当前HTML中未保存修改将丢失</cn>
+            <bg>Сигурни ли сте, че искате да импортирате HTML от този HTML шаблон? Несъхранените промени в HTML ще бъдат изгубени</bg>
+          <de>Sind sie sicher, dass sie das HTML aus diesem HTML Template importieren wollen? Ungespeicherte Änderungen am HTML gehen verloren</de>
+        </string>
+        <string id="12" type="tip">
+            <en>R code to be executed after BUTTON is pressed</en>
+            <pl>Kod R do wykonania po naciśnięciu przycisku</pl>
+            <cn>用于按键执行的R代码</cn>
+            <bg>R кодът ще бъде изпълнен след като се натисне БУТОН</bg>
+          <de>R code der ausgeführt wird, nachdem der BUTTON aktiviert wird</de>
+        </string>
+        <string id="13" type="tip">
+            <en>Select the BUTTON to submit on time-out</en>
+            <pl>Wybierz przycisk który ma zostać automatycznie kliknięty gdy skończy się czas ustawiony w polu `timer`</pl>
+            <cn>选择超时情况下执行按钮</cn>
+            <bg>Изберете БУТОН, за да изпращане, след като времето изтече</bg>
+          <de>BUTTON wählen der automatisch aktiviert wird wenn das Zeitlimit erreicht wird</de>
+        </string>
+        <string id="14" type="tip">
+            <en>HTML Template name</en>
+            <pl>Nazwa Szablonu HTML</pl>
+            <cn>HTML模板名称</cn>
+            <bg>Име на HTML шаблона</bg>
+          <de>HTML Template Name</de>
+        </string>
+        <string id="15" type="tip">
+            <en>Select a source HTML Template to import. Only HTML code will be imported while other properties of the current HTML Template are not changed</en>
+            <pl>Wybierz źródłowy Szablon HTML do importu. Tylko kod HTML zostanie zaimportowany. Pozostałe właściwości obecnego Szablony HTML nie będą zmienione</pl>
+            <cn>选择导入HTML模板源代码。仅导入HTML代码并保持当前HTML模板其他属性</cn>
+            <bg>Изберете HTMP код за импорт. Само HTML кодът ще бъде импортиран, докато другите свойства на настоящия HTML ще бъдат запазени</bg>
+          <de>Wählen Sie ein Quell-HTML Template zum importieren. Nur der HTML code wird importiert, andere Eigenschaften des aktuellen HTML Templates bleiben unverändert</de>
+        </string>
+        <string id="16" type="tip">
+            <en>HASH string can be used to start a test with a given HTML Template using URL. Example: http://yourdomain.com/?hash=insert_hash_here .</en>
+            <pl>HASH może być zastosowany do uruchomienia testu od danego Szablonu za pomoca adresu URL. Przykład: http://twojadomena.com/?hash=to_umiesc_hash .</pl>
+            <cn>可以通过URL使用HASH序列启动给定HTML模板的测试。示例：http://yourdomain.com/?hash=于此处插入HASH .</cn>
+            <bg>HASH може да бъде използван, за да се стартира теста с даден HTML шаблон като се използва URL. Например: http://вашиятдомейн.com/?hash=вмъкни hash тук.</bg>
+          <de>Die HASH Zeichenfolge kann benutzt werden um über eine URL einen Test mit dem entsprechenden HTML Template zu starte. Beispiel: http://deinedomain.de/?hash=fuege_deinen_hash_hier_ein</de>
+        </string>
+        <string id="17" type="tip">
+            <en>Maximum Time (in seconds) to answer the question on this template. When the time runs our the default button is submitted automatically. INSERT {{timer}} showing the time left in seconds can be used in the HTML Template</en>
+            <pl>Czas w sekundach na odpowiedź na pytanie znajdujące się na tym Szablonie HTML. Jeżeli czas się skończy domyślny przycisk zostanie automatycznie zatwierdzony. INSERT {{time}} pokazujący czas pozostały do końca może być zastosowana w Szablonie HTML</pl>
+            <cn>在本模板回答问题的时限（以秒计）。超时时将自动执行默认按钮。可在HTML模板中插入{{time}}以显示剩余时间</cn>
+            <bg>Максимум време (в секунди), за да се отговори на въпроса от този шаблон. Когато времето изтече, бутонът по подразбиране ще бъде изпратен автоматично. INSERT {{timer}} показва оставащото време в секунди за работа в този HTML шаблон.</bg>
+          <de>Maximale Zeit (in Sekunden) um dieses Template zu bearbeiten. Nach Ablauf der Zeit wird der Standardbutton automatisch aktiviert. Das INSERT  {{timer}} kann im HTML Template benutzt werden um die Zeit in Sekunden anzuzeigen.</de>
+        </string>
+        <string id="18" type="tip">
+            <en>Every HTML object like: &lt;input type='button' /&gt; , &lt;input type='image' /&gt; , &lt;button&gt;&lt;/button&gt; with 'name' attribute can have a R code assigned to it to be run after it is selected by the user. You can also select a default button that will be submitted on the time-out (if timer is set)</en>
+            <pl>Każdy obiekt HTML taki jak: &lt;input type='button' /&gt; , &lt;input type='image' /&gt; , &lt;button&gt;&lt;/button&gt; posiadający atrybut 'name' może mieć przypisany kod R który zostanie uruchomiony po wciśnięciu przycisku. Moźesz także wybrać domyślny przycisk który zostanie automatycznie wybrany jeżeli czas na odpowiedź na pytanie skończy się</pl>
+            <cn>所有具有“名称”属性的HTML客体均可赋予R代码并在由用户选择后运行。如果设置了计时器，您也可选择在超时后执行的默认按钮</cn>
+            <bg>Всеки HTML обект като: &lt;input type='button' /&gt; , &lt;input type='image' /&gt; , &lt;button&gt;&lt;/button&gt; с атрибут 'name' може да има приписан R код, който да се изпълни след като е избран от потребителя. Вие можете също да изберете бутон по подразбиране, който да бъде изпратен след като времето изтече (ако има стартиран таймер)</bg>
+                        <de>HTML Objekte wie z.B. &lt;input type='button' /&gt; , &lt;input type='image' /&gt;, oder &lt;button&gt;&lt;/button&gt; mit einem 'name' Attribut kann R Code zugeordnet werden, welcher ausgeführt wird, wenn der Benutzer das Objekt aktiviert (z.B. darauf klickt). Sie können auch einen Standardbutton wählen, welcher aktiviert wird wenn das Zeitlimit erreicht wird (falls ein solches gesetzt ist)</de>
+
+        </string>
+        <string id="19" type="tip">
+            <en>The list of HTML Templates that you can access</en>
+            <pl>Lista Szablonów HTML do których masz dostęp</pl>
+            <cn>可使用HTML模板列表</cn>
+            <bg>Списък с HTML Име на HTML шаблона</bg>
+          <de>Die Liste von HTML Templates auf die Sie Zugriff haben</de>
+        </string>
+        <string id="23" type="tip">
+            <en>The list of USER INPUTS present on a current HTML template, such as Fields, Radio Buttons, Checkboxes, etc. Values entered by users will be stored under the name of a given USER INPUT</en>
+            <pl>Lista PÓL WPROWADZANIA obecnych na obecnym Szablonie HTML, takich jak Text Fields, Radio Buttons, Checkboxes, etc. Wartości wprowadzone przez użytkowników zostaną zapisane pod nazwą danego POLA WPROWADZANIA</pl>
+            <cn>当前HTML模板上用户输入列表，例如文本框、音频按钮、选择框等等。用户输入的数值将以给定的用户输入名称储存</cn>
+            <bg>Списък на ПОЛЕТАТА ЗА ВЪВЕЖДАНЕ представени в настоящия HTML шаблон, като например Полета, Радио бутони, Полета за маркиране и т.н. Стойностите въведени от потребителите ще бъдат съхранени под името на даденото ПОЛЕ ЗА ВЪВЖДАНЕ</bg>
+          <de>Die Liste von USER INPUTS welche in dem aktuellen HTML Template benutzt werden, wie z.B. Eingabefelder, Radio Buttons oder Checkboxen. Vom Nutzer eingegebene Werte werden unter dem 'name' des USER INPUTS gespeichert</de>
+        </string>
+        <string id="24" type="tip">
+            <en>The list of INSERTS (e.g. {{cool_insert}}) that were declared in the current HTML Template</en>
+            <pl>Lista INSERTÓW zadeklarownych w obecnym Szablonie HTML</pl>
+            <cn>当前HTML模板中声明的插入列表（例如{{cool_insert}}）</cn>
+            <bg>Списък на ВМЪКВАНИЯ (напр.  {{cool_insert}}), които са декларирани в настоящия HTML шаблон</bg>
+          <de>Die Liste der INSERTS (z.B. {{cool_insert}}) die im aktuellen HTML Template deklariert worden sind</de>
+        </string>
+        <string id="39">
+            <en>Import the HTML</en>
+            <pl>Importuj kod HTML</pl>
+            <cn>导入HTML</cn>
+            <bg>Импортирай HTML</bg>
+            <de>HTML importieren</de>
+        </string>
+        <string id="40">
+            <en>Create new</en>
+            <pl>Dodaj</pl>
+            <cn>创建</cn>
+            <bg>Създайте нов</bg>
+            <de>Erstelle neu(es)</de>
+        </string>
+        <string id="41">
+            <en>Save</en>
+            <pl>Zapisz</pl>
+            <cn>保存</cn>
+            <bg>Съхрани</bg>
+            <de>Speichern</de>
+        </string>
+        <string id="42">
+            <en>Delete</en>
+            <pl>usuń</pl>
+            <cn>删除</cn>
+            <bg>Изтрий</bg>
+            <de>Löschen</de>
+        </string>
+        <string id="43">
+            <en>Edit</en>
+            <pl>Edycja</pl>
+            <cn>编辑</cn>
+            <bg>Редактирай</bg>
+            <de>Bearbeiten</de>
+        </string>
+        <string id="49">
+            <en>Id</en>
+            <pl>Id</pl>
+            <cn>ID</cn>
+            <bg>ID</bg>
+            <de>ID</de>
+        </string>
+        <string id="50">
+            <en>Name</en>
+            <pl>Nazwa</pl>
+            <cn>名称</cn>
+            <bg>Име</bg>
+            <de>Name</de>
+        </string>
+        <string id="51">
+            <en>Hash</en>
+            <pl>Hash</pl>
+            <cn>Hash</cn>
+            <bg>Hash</bg>
+            <de>Hash</de>
+        </string>
+        <string id="54">
+            <en>Assigning R code to BUTTONS</en>
+            <pl>Przypisywanie kodu R do przycisków</pl>
+            <cn>赋予按钮R代码</cn>
+            <bg>Приписване на R код към БУТОНИТЕ</bg>
+            <de>BUTTONS R Code zuweisen</de>
+        </string>
+        <string id="55">
+            <en>no.</en>
+            <pl>nr</pl>
+            <cn>序号</cn>
+            <bg>№</bg>
+            <de>Nr.</de>
+        </string>
+        <string id="56">
+            <en>BUTTON name</en>
+            <pl>Nazwa przycisku</pl>
+            <cn>按钮名称</cn>
+            <bg>Име на БУТОН</bg>
+            <de>Name des Buttons</de>
+        </string>
+        <string id="58">
+            <en>R code to execute</en>
+            <pl>Kod R do wykonania</pl>
+            <cn>执行R代码</cn>
+            <bg>R код за изпълнение</bg>
+            <de>Auszuführender R Code</de>
+        </string>
+        <string id="59">
+            <en>Default BUTTON</en>
+            <pl>Domyślny przycisk</pl>
+            <cn>默认按钮</cn>
+            <bg>БУТОН по подразбиране</bg>
+            <de>Standardbutton</de>
+        </string>
+        <string id="67">
+            <en>USER INPUTS</en>
+            <pl>POLA WPROWADZANIA</pl>
+            <cn>用户输入</cn>
+            <bg>ПОЛЕТА ЗА ВЪВЕЖДАНЕ</bg>
+            <de>USER INPUTS (Benutzereingaben)</de>
+        </string>
+        <string id="68">
+            <en>HTML object type</en>
+            <pl>typ obiektu HTML</pl>
+            <cn>HTML客体类别</cn>
+            <bg>Вид на HTML обекта</bg>
+            <de>Typ des HTML Objekt</de>
+        </string>
+        <string id="69">
+            <en>INSERTS</en>
+            <pl>INSERTY</pl>
+            <cn>插入</cn>
+            <bg>ВМЪКВАНИЯ</bg>
+            <de>INSERTS</de>
+        </string>
+        <string id="71">
+            <en>Test designer</en>
+            <pl>Kreator testów</pl>
+            <cn>测试设计者</cn>
+            <bg>Дизайнер на теста</bg>
+            <de>Test Designer</de>
+        </string>
+        <string id="74">
+            <en>Log in</en>
+            <pl>Zaloguj</pl>
+            <cn>登录</cn>
+            <bg>Вход</bg>
+            <de>Einloggen</de>
+        </string>
+        <string id="75">
+            <en>Cancel</en>
+            <pl>Anuluj</pl>
+            <cn>取消</cn>
+            <bg>Отмяна</bg>
+            <de>Verwerfen</de>
+        </string>
+        <string id="76">
+            <en>Login</en>
+            <pl>Login</pl>
+            <cn>用户名</cn>
+            <bg>Login</bg>
+            <de>Login</de>
+        </string>
+        <string id="77">
+            <en>Password</en>
+            <pl>Hasło</pl>
+            <cn>密码</cn>
+            <bg>Парола</bg>
+            <de>Passwort</de>
+        </string>
+        <string id="78">
+            <en>Users</en>
+            <pl>Użytkownicy</pl>
+            <cn>用户</cn>
+            <bg>Потребители</bg> 
+            <de>Benutzer</de>
+        </string>
+        <string id="79">
+            <en>Groups</en>
+            <pl>Grupy</pl>
+            <cn>群</cn>
+            <bg>Групи</bg>
+            <de>Gruppen</de>
+        </string>
+        <string id="80">
+            <en>The login/password combination is incorrect!</en>
+            <pl>Kombinacja login/hasło jest niepoprawna!</pl>
+            <cn>用户名/密码错误</cn>
+            <bg>Комбинацията login/парола е неправилна</bg>
+            <de>Die Kombination aus Benutzername und Passwort ist falsch!</de>
+        </string>
+        <string id="81">
+            <en>Are you sure you want to delete the user?</en>
+            <pl>Czy jesteś pewien, że chcesz usunąć użytkownika?</pl>
+            <cn>确认删除此用户？</cn>
+            <bg>Сигурни ли сте, че искате да изтриете потребителите</bg>
+            <de>Sind Sie sicher, dass Sie diesen Benutzer löschen wollen?</de>
+        </string>
+        <string id="82">
+            <en>Password and password confirmation don't match!</en>
+            <pl>Hasło i potwierdzenie hasła nie zgadzają się!</pl>
+            <cn>密码及密码确认不匹配</cn>
+            <bg>Паролата и потвърждението й не съответстват</bg>
+            <de>Passwort und Passwortbestätigung stimmen nicht überein!</de>
+        </string>
+        <string id="83">
+            <en>Login dialog</en>
+            <pl>Logowanie</pl>
+            <cn>登录窗口</cn>
+            <bg>Login поле</bg>
+            <de>Login Dialog</de>
+        </string>
+        <string id="84">
+            <en>Current user</en>
+            <pl>Bieżący użytkownik</pl>
+            <cn>当前用户</cn>
+            <bg>Актуален потребител</bg>
+            <de>Aktueller Benutzer</de>
+        </string>
+        <string id="85">
+            <en>Access Denied! It's possible that it is because of timed out session. If you think that is the case please refresh your browser.</en>
+            <pl>Dostęp Wzbroniony! Istnieje mozliwosc, ze jest to spowodowane wygasnieta sesja. Jesli uwazasz ze to jest powodem to prosze odswiezyc przegladarke.</pl>
+            <cn>连接失败！请确认是否超时。若超时请刷新浏览器</cn>
+            <bg>Достъпът отказан! Възможно е, това да се дължи на изтичане на времето на сесията. Ако смятате, че е така, моля обновете своя браузър</bg>
+            <de>Kein Zugriff! Möglicherweise wegen einer ausgelaufenen Sitzung. Refreshen Sie ggf. Ihren Browser.</de>
+        </string>
+        <string id="86">
+            <en>Editing user</en>
+            <pl>Edycja użytkownika</pl>
+            <cn>编辑用户</cn>
+            <bg>Редактиране на потребителя</bg>
+            <de>Bearbeitender Benutzer</de>
+        </string>
+        <string id="87">
+            <en>Creating new user</en>
+            <pl>Tworzenie nowego użytkownika</pl>
+            <cn>创建新用户</cn>
+            <bg>Създаване на нов потребител</bg>
+            <de>Neuen Nutzer anlegen</de>
+        </string>
+        <string id="88">
+            <en>Check if you want to set the new password</en>
+            <pl>Zaznacz jeśli chcesz ustawić nowe hasło</pl>
+            <cn>检查是否设置新密码</cn>
+            <bg>Проверете дали не искате да създадете нова парола</bg>
+            <de>Ankreuzgen wenn Sie ein neues Passwort setzen wollen</de>
+        </string>
+        <string id="89">
+            <en>Confirm the password</en>
+            <pl>Potwierdź hasło</pl>
+            <cn>确认密码</cn>
+            <bg>Потвърдете паролата</bg>
+            <de>Bestätigen Sie das Passwort</de>
+        </string>
+        <string id="90">
+            <en>First name</en>
+            <pl>Imię</pl>
+            <cn>名</cn>
+            <bg>Име</bg>
+            <de>Vorname</de>
+        </string>
+        <string id="91">
+            <en>Last name</en>
+            <pl>Nazwisko</pl>
+            <cn>姓</cn>
+            <bg>Фамилия</bg>
+            <de>Nachname</de>
+        </string>
+        <string id="92">
+            <en>Email</en>
+            <pl>Email</pl>
+            <cn>邮箱</cn>
+            <bg>Имейл</bg>
+            <de>Email</de>
+        </string>
+        <string id="93">
+            <en>Phone no.</en>
+            <pl>Nr telefonu</pl>
+            <cn>电话</cn>
+            <bg>Телефон</bg>
+            <de>Telefonnr.</de>
+        </string>
+        <string id="94">
+            <en>Group</en>
+            <pl>Grupa</pl>
+            <cn>群</cn>
+            <bg>Група</bg>
+            <de>Gruppe</de>
+        </string>
+        <string id="95">
+            <en>None</en>
+            <pl>Brak</pl>
+            <cn>无</cn>
+            <bg>Няма</bg>
+            <de>Keiner</de>
+        </string>
+        <string id="96">
+            <en>Super admin</en>
+            <pl>Super admin</pl>
+            <cn>管理权限</cn>
+            <bg>Главен администратор</bg>
+            <de>Super admin</de>
+        </string>
+        <string id="97">
+            <en>Available users</en>
+            <pl>Dostępni użytkownicy</pl>
+            <cn>有效用户</cn>
+            <bg>Достъпни потребители</bg>
+            <de>Verfügbare Nutzer</de>
+        </string>
+        <string id="98">
+            <en>No users are available</en>
+            <pl>Brak dostępnych użytkowników</pl>
+            <cn>无有效用户</cn>
+            <bg>Няма достъпни потребители</bg>
+            <de>Keine Nutzer verfügbar</de>
+        </string>
+        <string id="99">
+            <en>Last activity</en>
+            <pl>Ostatnia aktywność</pl>
+            <cn>最近活动</cn>
+            <bg>Последна активност</bg>
+            <de>Letzte Aktivität</de>
+        </string>
+        <string id="100">
+            <en>Actions</en>
+            <pl>Akcje</pl>
+            <cn>活动</cn>
+            <bg>Действия</bg>
+            <de>Aktionen</de>
+        </string>
+        <string id="101">
+            <en>Search the list:</en>
+            <pl>Przeszukaj listę:</pl>
+            <cn>搜索列表：</cn>
+            <bg>Търси в списъка</bg>
+            <de>Durchsuche die Liste:</de>
+        </string>
+        <string id="102">
+            <en>per page</en>
+            <pl>na stronę</pl>
+            <cn>每页</cn>
+            <bg>за страница</bg>
+            <de>pro Seite</de>
+        </string>
+        <string id="103">
+            <en>Editing the group</en>
+            <pl>Edycja grupy</pl>
+            <cn>编辑群</cn>
+            <bg>Редактиране на групата</bg>
+            <de>Gruppe bearbeiten</de>
+        </string>
+        <string id="104">
+            <en>Creating new group</en>
+            <pl>Tworzenie nowej grupy</pl>
+            <cn>创建群</cn>
+            <bg>Създаване на нова група</bg>
+            <de>Neue Gruppe anlegen</de>
+        </string>
+        <string id="105">
+            <en>Sharing</en>
+            <pl>Dzielenie</pl>
+            <cn>分享</cn>
+            <bg>Споделяне</bg>
+            <de>Gemeinsam benutzen</de>
+        </string>
+        <string id="106">
+            <en>Available groups</en>
+            <pl>Dostępne grupy</pl>
+            <cn>有效群</cn>
+            <bg>Достъпни групи</bg>
+            <de>Verfügbare Gruppen</de>
+        </string>
+        <string id="107">
+            <en>No groups are available</en>
+            <pl>Brak dostępnych grup</pl>
+            <cn>无有效群</cn>
+            <bg>Няма достъпни групи</bg>
+            <de>Keine Gruppen verfügbar</de>
+        </string>
+        <string id="108">
+            <en>Owner</en>
+            <pl>Właściciel</pl>
+            <cn>所有者</cn>
+            <bg>Собственик</bg>
+            <de>Besitzer</de>
+        </string>
+        <string id="109">
+            <en>Do you really want to delete this group</en>
+            <pl>Czy jesteś pewien, że chcesz usunąć tą grupę</pl>
+            <cn>确认删除此群？</cn>
+            <bg>Наистина ли искате да изтриете групата</bg>
+            <de>Wollen Sie diese Gruppe wirklich löschen</de>
+        </string>
+        <string id="110">
+            <en>Available HTML Templates</en>
+            <pl>Dostępne Szablony HTML</pl>
+            <cn>有效HTML模板</cn>
+            <bg>Наличен HTML шаблон</bg>
+            <de>Verüfgbare HTML Templates</de>
+        </string>
+        <string id="111">
+            <en>No HTML templates are available</en>
+            <pl>Brak dostępnych szablonów HTML</pl>
+            <cn>无有效HTML模板</cn>
+            <bg>Няма налични HTML шаблони</bg>
+            <de>Keine HTML Templates verfügbar</de>
+        </string>
+        <string id="112">
+            <en>Editing HTML template</en>
+            <pl>Edycja Szablonu HTML</pl>
+            <cn>编辑HTML模板</cn>
+            <bg>Редактиране на HTML шаблона</bg>
+            <de>HTML Template bearbeiten</de>
+        </string>
+        <string id="113">
+            <en>Creating new HTML Template</en>
+            <pl>Tworzenie nowego Szablonu HTML</pl>
+            <cn>创建HTML模板</cn>
+            <bg>Създаване на нов HTML шаблон</bg>
+            <de>Neues HTML Template anlegen</de>
+        </string>
+        <string id="114">
+            <en>Do you really want to delete this HTML template?</en>
+            <pl>Czy jesteś pewien, że chcesz usunąć ten szablon elementu?</pl>
+            <cn>确认删除此HTML模板？</cn>
+            <bg>Наистина ли искате изтриете HTML шаблона</bg>
+            <de>Wollen Sie dieses HTML Template wirklich löschen?</de>
+        </string>
+        <string id="115">
+            <en>Preview</en>
+            <pl>Podgląd</pl>
+            <cn>预览</cn>
+            <bg>Преглед</bg>
+            <de>Vorschau</de>
+        </string>
+        <string id="116">
+            <en>Log out</en>
+            <pl>Wyloguj</pl>
+            <cn>注销</cn>
+            <bg>Изход</bg>
+            <de>Abmelden</de>
+        </string>
+        <string id="117">
+            <en>HTML layer</en>
+            <pl>Warstwa HTML</pl>
+            <cn>HTML界面</cn>
+            <bg>HTML интерфейс</bg>
+            <de>HTML layer</de>
+        </string>
+        <string id="118">
+            <en>R Code</en>
+            <pl>Kod R</pl>
+            <cn>R代码</cn>
+            <bg>R код</bg>
+            <de>R Code</de>
+        </string>
+        <string id="119">
+            <en>Debug</en>
+            <pl>Debug</pl>
+            <cn>调试</cn>
+            <bg>Дебъг</bg>
+            <de>Debuggen</de>
+        </string>
+        <string id="120">
+            <en>Show variables sent to R</en>
+            <pl>Pokaż zmienne wysyłane do R </pl>
+            <cn>显示发送至R的变量</cn>
+            <bg>Покажи променливите изпратени към R</bg>
+            <de>Zeige an R geschickte Variablen an</de>
+        </string>
+        <string id="121">
+            <en>Show R objects</en>
+            <pl>Pokaż obiekty R</pl>
+            <cn>显示R客体</cn>
+            <bg>Покажи R обектите</bg>
+            <de>Zeige R Objekte</de>
+        </string>
+        <string id="122">
+            <en>Concerto Homepage</en>
+            <pl>Strona domowa Concerto</pl>
+            <cn>Concerto主页</cn>
+            <bg>Начална страница на Concerto</bg>
+            <de>Concerto Homepage</de>
+        </string>
+        <string id="123">
+            <en>Concerto Google Group</en>
+            <pl>Google GroupConcerto  </pl>
+            <cn>Concerto谷歌群</cn>
+            <bg>Група в Google на Concerto</bg>
+            <de>Concerto Google Group</de>
+        </string>
+        <string id="124">
+            <en>Documentation of the built-in R functions</en>
+            <pl>Dokumentacja wbudowanych funkcji R</pl>
+            <cn>内置R功能文件</cn>
+            <bg>Документация на вградените R функции</bg>
+            <de>Dokumentation der eingebauten R Funktionen</de>
+        </string>
+        <string id="125">
+            <en>Function</en>
+            <pl>Funckja</pl>
+            <cn>功能</cn>
+            <bg>Функции</bg>
+            <de>Funktion</de>
+        </string>
+        <string id="126">
+            <en>Description</en>
+            <pl>Opis</pl>
+            <cn>描述</cn>
+            <bg>Описание</bg>
+            <de>Beschreibung</de>
+        </string>
+        <string id="127">
+            <en>Example</en>
+            <pl>Przykład</pl>
+            <cn>示例</cn>
+            <bg>Пример</bg>
+            <de>Beispiel</de>
+        </string>
+        <string id="128">
+            <en>This function allows sending INSERTS to the HTML Layer. set.var("var_name", "Hello") will change {{var_name}} in HTML to Hello</en>
+            <pl>Ta funkcja pozwala wysyłać INSERTY do warstwy HTML. set.var("var_name", "Hello") zamieni {{var_name}} w HTMLu na Hello</pl>
+            <cn>此功能发送插入至HTML界面。set.var("var_name", "Hello") 在HTML内将{{var_name}}修改为Hello</cn>
+            <bg>Функцията позволява да се изпратят ВМЪКВАНИЯ в HTML интерфейса. set.var("var_name", "Hello") ще промени {{var_name}} на HTML на Hello</bg>
+             <de> Diese Funktion erlaubt es INSERTS and die HTML Layer zu senden. set.var("var_name", "Hallo") verändert {{var_name}} im HTML zu Hallo</de>
+</string>
+        <string id="129">
+            <en>This function allows changing the next HTML Template (by default the HTML Template stays the same)</en>
+            <pl>Ta funckja pozwala zmienić następny Szablon HTML (domyślnie, Szablon pozostaje ten sam)</pl>
+            <cn>此功能修改随后的HTML模板（默认情况下HTML模板不变）</cn>
+            <bg>Функцията позволява да се промени следващият HTML шаблон (по подразбиране HTML шаблона остава същия)</bg>
+            <de>Diese Funktion erlaubt es, das nächste HTML Template festzulegen (Standardeinstellung: das HTML Template bleibt gleich)</de>
+        </string>
+        <string id="130">
+            <en>INSERTS and USER INPUTS</en>
+            <pl>INSERTY i POLA WYPELNIANIA</pl>
+            <cn>插入和用户输入</cn>
+            <bg>ВМЪКВАНИЯ и ПОЛЕТА ЗА ВЪВЕЖДАНЕ</bg>
+            <de>INSERTS und USER INPUTS</de>        
+</string>
+        <string id="131">
+            <en>All fields marked with * must be filled.</en>
+            <pl>Wszystkie pola oznaczone * muszą zostać wypełnione.</pl>
+            <cn>标记*为必填项。</cn>
+            <bg>Всички полета маркирани с * трябва да бъдат попълнени</bg>
+            <de>Alle mit * markierten Felder müssen ausgefüllt werden</de>
+        </string>
+        <string id="132">
+            <en>Failed to save object. Probably object with the same value of field marked as unique already exists in the system.</en>
+            <pl>Nie udało się zapisać obiektu. Prawdopodobnie obiekt z taka sama wartoscia pola oznaczonego jako unikatowe istnieje juz w systemie.</pl>
+            <cn>保存客体失败。系统内可能存在具有相同数值的独特客体。</cn>
+            <bg>Обектът не е съхранен. Може би обектът е със същата стойност като полето, маркирано като уникално, съществува в системата</bg>
+            <de>Konnte Objekt nicht speichern. Wahrscheinlich existiert schon ein Objekt mit dem gleichen Wert auf einem Feldes das als eindeutig markiert ist im System.</de>
+        </string>
+        <string id="133">
+            <en>Saved</en>
+            <pl>Zapisano</pl>
+            <cn>已保存</cn>
+            <bg>Съхранено</bg>
+            <de>Gespeichert</de>
+        </string>
+        <string id="134">
+            <en>Run</en>
+            <pl>Uruchom</pl>
+            <cn>运行</cn>
+            <bg>Стартиране</bg>
+            <de>Laufenlassen</de>
+        </string>
+        <string id="135">
+            <en>Execute</en>
+            <pl>Wykonaj</pl>
+            <cn>执行</cn>
+            <bg>Изпълни</bg>
+            <de>Ausführen</de>
+        </string>
+        <string id="136">
+            <en>Choose an action:</en>
+            <pl>Wybierz akcję:</pl>
+            <cn>选择活动</cn>
+            <bg>Изберете действие</bg>
+            <de>Aktion wählen:</de>
+        </string>
+        <string id="136">
+            <en>Are you sure that you want to delete the file?</en>
+            <pl>Czy jesteś pewien, że chcesz usunąć ten plik?</pl>
+            <cn>确认删除此文件？</cn>
+            <bg>Искате ли да изтриете файла</bg>
+            <de>Sind Sie sicher, dass Sie diese Datei löschen wollen?</de>
+        </string>
+        <string id="137">
+            <en>Concerto Platform message</en>
+            <pl>Komunikat z Platformy Concerto</pl>
+            <cn>Concerto系统消息</cn>
+            <bg>Съобщение от платформата Concerto</bg>
+            <de>Concerto Plattform Nachricht</de>
+        </string>
+        <string id="138">
+            <en>Concerto Platform confirmation</en>
+            <pl>Potwierdzenie z Platformy Concerto</pl>
+            <cn>Concerto系统确认</cn>
+            <bg>Потвърждение от платформата Concerto</bg>
+            <de>Concerto Plattform Bestätigung</de>
+        </string>
+        <string id="139">
+            <en>Your version is OUTDATED.</en>
+            <pl>Twoja wersja jest NIEAKTUALNA.</pl>
+            <cn>您的版本已过期。</cn>
+            <bg>Вашата версия е обновена</bg>
+            <de>Ihre Version ist VERALTET.</de>
+        </string>
+        <string id="140">
+            <en>CLICK HERE TO DOWNLOAD THE LATEST PATCH</en>
+            <pl>KLIKNIJ TUTAJ ABY POBRAC NAJNOWSZY PATCH</pl>
+            <cn>下载最新版本</cn>
+            <bg>КЛИКНЕТЕ ТУК, ЗА ДА СВАЛИТЕ ПОСЛЕДНОТО ДОПЪЛНЕНИЕ</bg>
+            <de>KLICKEN SIE HIER UM DEN NEUESTEN PATCH HERUNTERZULADEN</de>
+        </string>
+        <string id="141">
+            <en>your version is up to date</en>
+            <pl>twoja wersja jest aktualna </pl>
+            <cn>您正在使用最新版本</cn>
+            <bg>вашата версия е актуална</bg>
+            <de>Ihre Version ist auf dem neuesten Stand</de>
+        </string>
+        <string id="142">
+            <en>Send user login credentials</en>
+            <pl>Wyslac uzytkownikowi dane logowania</pl>
+            <cn>发送用户登录凭证</cn>
+            <bg>Изпратете данните за влизане</bg>
+            <de>Zugangsdaten an Nutzer verschicken</de>
+        </string>
+        <string id="143">
+            <en>Welcome message</en>
+            <pl>Wiadomosc powitalna</pl>
+            <cn>欢迎信息</cn>
+            <bg>Съобщение за приветствие</bg>
+            <de>Willkommensnachricht</de>
+        </string>
+    </strings>
+</root>

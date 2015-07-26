@@ -1,0 +1,91 @@
+@CHARSET "UTF-8";
+body 
+{
+    font-size: 9px; 
+    height:100%; 
+    margin-top:2px;
+    margin-bottom:2px;
+    padding:0px;
+}
+td { padding:3px; }
+.tdClean { padding:0px;}
+#layoutTabs
+{
+    padding:0px;	
+    margin: 0px;
+}
+.layoutTab 
+{
+}
+.codeTextarea
+{
+    width:100%;
+    height:200px;
+}
+.codeInput
+{
+
+}
+
+.btnFB
+{
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif; 
+    font-size: 13px; 
+    font-weight: bold; 
+    color: rgb(255, 255, 255); 
+    text-transform: none; 
+    text-decoration: none; 
+    text-align: center; 
+    vertical-align: top; 
+    background-color: rgb(91, 116, 168); 
+    height: 19px; 
+    margin: 10px 0pt 0pt; 
+    padding: 2px 6px; 
+    border-width: 1px; 
+    border-color: rgb(41, 68, 126) rgb(41, 68, 126) rgb(26, 53, 110);
+    border-style: solid; 
+    display: inline-block; 
+    cursor: pointer; 
+    position: absolute;
+}
+
+.helpHeader
+{
+    padding-left:20px;
+}
+
+.fullWidth
+{
+    width: 100%;		
+}
+
+.fullHeight
+{
+    height:100%;
+}
+
+.formTable
+{
+    padding:3px;		
+}
+
+.listTable
+{
+    padding:0px;		
+}
+
+.listTable thead tr
+{
+    cursor:pointer;
+}
+
+.noWrap
+{
+    white-space: nowrap;		
+}
+
+.noMarginPadding
+{
+    margin:0px;
+    padding:0px;
+}

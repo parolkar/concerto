@@ -1,0 +1,328 @@
+/*
+Concerto Platform - Online Adaptive Testing Platform
+Copyright (C) 2011-2013, The Psychometrics Centre, Cambridge University
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; version 2
+of the License, and not any of the later versions.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
+root { 
+    display: block;
+}
+
+body{
+    font-size: 11px;
+    background: url(img/stripe.png) repeat;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height:100%;
+}
+
+.padding {
+    padding:5px;
+}
+
+.horizontalPadding {
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.margin{
+    margin:5px;
+}
+
+.horizontalMargin {
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.smallMargin{
+    margin:2px;
+}
+
+.fullWidth{
+    width:100%;
+}
+
+.fullHeight
+{
+    height:100%;
+}
+
+.hcenter{
+    margin:auto;
+}
+
+.noWrap{
+    white-space: nowrap;		
+}
+
+.noSpace
+{
+    margin:0px;
+    padding:0px;
+}
+
+.notVisible {
+    display:none;
+}
+
+.ui-autocomplete-loading { 
+    background: white url('img/ajax-loader.gif') right center no-repeat; 
+}
+
+.ui-sortable-placeholder { border: 1px dotted black; visibility: visible !important; height: 50px !important; }
+.ui-sortable-placeholder * { visibility: hidden; }
+
+.thSortable{
+    cursor: pointer;
+}
+
+.textareaCode {
+}
+
+.divSection{
+}
+
+.tableSectionHeader{
+    height:35px;
+}
+
+.divSubsection {
+}
+
+ul {
+    margin:0px;
+}
+
+.tooltipWindow{
+    max-width: 300px;
+}
+
+.tooltipUnlimitedWindow{
+    max-width:  100% !important;
+}
+
+.no-close .ui-dialog-titlebar-close {display: none }
+
+.table {
+    display:table;
+    text-align: left;
+}
+
+.grid {
+    min-width:800px;
+}
+
+
+.tdSectionColumnIcon{
+    width:16px;
+}
+.tdSectionColumnCounter{
+    width:25px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-image: -webkit-gradient(linear, center top, center bottom, from(#fcfcfc), to(#bfbfbf), color-stop(3%, #f7f7f7), color-stop(12%, #f2f2f2), color-stop(90%, #d9d9d9));
+    background-image: -webkit-linear-gradient(top, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+    background-image: -moz-linear-gradient(top, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+    background-image: -o-linear-gradient(top, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+    background-image: -ms-linear-gradient(top, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+    background-image: linear-gradient(to bottom, #fcfcfc, #f7f7f7 3%, #f2f2f2 12%, #d9d9d9 90%, #bfbfbf);
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.75), inset 0 1px 0 white;
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.75), inset 0 1px 0 white;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.75), inset 0 1px 0 white;
+
+}
+.tdSectionColumnType{
+    width:150px;
+    font-weight: bold;
+}
+.tdSectionColumnAction{
+}
+.tdSectionColumnEnd{
+    width:25px;
+}
+.sortableHandle{
+    cursor: move;
+}
+
+.divSectionBracket{
+    font-size: larger;
+    font-weight: bold;
+}
+.divSectionContainer{
+    margin-left: 25px;
+}
+
+.divCodeMirrorContainer {
+    max-width: 815px;
+}
+
+.divFormFloatingBar {
+    position:fixed;
+    bottom: 0px;
+    left:0%;
+    right:0%;
+    opacity: 0.75;
+}
+
+.tdVarPointer{
+    display:none;
+}
+
+.iconAddSection {
+    margin-top:15px;
+}
+
+.divFormElement {
+    float:left;
+    width:33%;
+    height:22px;
+    margin-bottom:5px;
+}
+
+.tdFormLabel {
+    font-style: italic;
+    width:80px;
+    margin-left:5px;
+}
+
+.spanIcon{
+    cursor:pointer;
+}
+
+.tdFormIcon {
+    width:16px;
+}
+
+.divFormControl {
+    margin-right:5px;
+}
+
+.divTestHorizontalElement{
+    float:left;
+    width:50%;
+    height:100%;
+}
+
+.divTestVerticalElement {
+    width:100%; 
+    padding:0px;
+    overflow-y:scroll;
+}
+
+.codeMirrorActiveLine {
+    background: #EDF0F2 !important;
+}
+
+.codeMirrorSearchHighlight {
+    background: #F5E889 !important;
+}
+
+.CodeMirror-fullscreen {
+    display: block;
+    position: fixed !important;
+    top: 0; left: 0;
+    z-index: 9999;
+}
+
+.tdStateLabel {
+    font-weight: bold;
+}
+
+.tdStateValue {
+
+}
+
+.divInlineWidget {
+    word-break: break-all;
+}
+
+.divFunctionWidget {
+}
+
+.divFunctionWidgetTitle{
+    font-size:larger;
+    font-weight:bold;
+}
+
+.divFunctionWidgetDescription{
+    
+}
+
+.divFunctionWidgetArgTable{
+    
+}
+
+.divFunctionWidgetArgTableDescColumn{
+    width:30px;
+}
+
+.divFunctionWidgetArgTableNameColumn{
+    
+}
+
+.divFunctionWidgetArgTableValueColumn{
+    width:100%;
+}
+
+.divFunctionWidgetElement{
+    margin:5px;
+}
+
+.divFunctionWidgetButtons{
+    
+}
+
+.divFunctionWidgetOption{
+    float:left;
+    margin-right:10px;
+}
+
+.divFunctionWidgetOptions{
+    
+}
+
+.divFunctionToolbar{
+    position:fixed;
+    bottom: 50px;
+    left:0px;
+    z-index: 5;
+}
+
+.divFunctionToolbarContent{
+    padding:5px;
+    width:400px;
+}
+
+.tdFunctionToolbarIcon{
+    width: 30px;
+}
+
+.tdFunctionToolbarName{
+    font-weight: bold;
+}
+
+.tdFunctionToolbarPackage{
+    font-style: italic;
+}
+
+.divFWradioMenu{
+    font-size: smaller;
+}

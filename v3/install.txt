@@ -1,0 +1,27 @@
+====== License ======
+This software is released under GNU GPLv2 license.
+For more info go to: http://www.gnu.org/licenses/gpl-2.0.html
+
+====== Installation =======
+
+This version is not compatible with pre v3.0 releases of Concerto Platform. Do not try to install this version using the same MySQL database that you used in previous Concerto Platform releases.
+
+To install ( or patch ) application you need to :
+  * extract everything from zip archive to public web folder on your server
+  * edit /SETTINGS.php file and set your MySQL database connection
+  * run /setup and follow it's instructions ( this page will check if you have every required component installed on your server and will let you configure applications settings )
+  * it is strongly recommended to delete /setup folder with all it's content after first successful run
+
+Requirments:
+  * PHP >= v5.3
+  * PHP 'short open tags' option must be set to on
+  * PHP 'safe mode' must be turned off
+  * R   >= v2.12
+  * RMySQL R package installed in main R library directory
+  * catR R package installed in main R library directory
+  * MySQL >= v5.0
+
+Support:
+If you need help installing write to: 	[[mk583@cam.ac.uk]] or [[pl362@cam.ac.uk]]
+Check Concerto Platform homepage at: http://code.google.com/p/concerto-platform
+Subscribe to Concerto Platform group at: http://groups.google.com/group/concerto-platform
